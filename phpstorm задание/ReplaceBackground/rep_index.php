@@ -12,7 +12,7 @@
 </head>
 
 <body>
-	< class="wrapper">
+	<class="wrapper">
 		<header class="header">
 			<div class="header_container">
 				<div class="header_body">
@@ -25,38 +25,38 @@
 							<li class="menu_item"><a href="../TableMendeleev/index/table_index.html" class="menu_link">Таблица Менделеева</a></li>
 							<li class="menu_item"><a href="../Profile/index/prof_index.html" class="menu_link">Мой профайл</a></li>
 							<li class="menu_item"><a href="../ReplaceBackground/rep_index.php" class="menu_link">Смена фона</a></li>
-							<li class="menu_item"><a href="" class="menu_link"></a></li>
+							<li class="menu_item"><a href="../ReplaceFile/rep_index.php" class="menu_link">Rep_background</a></li>
 						</ul>
 					</nav>
 				</div>
 			</div>
 		</header>
-		<div class="content">
+			<div class="content">
 					<?php
 						date_default_timezone_set("Asia/Yekaterinburg");
 						$hour = (int)date("G");
-						$hour = $hour -1;
 
-						if ($hour >=7  && $hour <=16) : ?>
-							<img src="../img/morning_forest.jpg">
+						if ($hour >=7  && $hour <=16) { 
+							echo '<img src="../img/morning_forest.jpg">';
 
-						<?php elseif ($hour >=17  && $hour <=21) :?>
-							<img src="../img/evening_forest.jpg">
+						} 	elseif ($hour >=17  && $hour <=21) {
+							echo '<img src="../img/evening_forest.jpg">';
 
-						<?php elseif ($hour >=22 || $hour >=1 && $hour<=6) :	?>
-							<img src="../img/night_forest.jpg">
-
-					<?php endif; ?>
-
-			<div class="content_container">
-				<div class="content_block">
-					<?php
-					date_default_timezone_set("Asia/Yekaterinburg");
-					echo date('d-m-Y G:i:s A');
+						} 	elseif ($hour ==22 || $hour >=1 && $hour<=6) {
+							echo '<img src="../img/night_forest.jpg">';
+						}
+					
 					?>
+
+				<div class="content_container">
+					<div class="content_block">
+						<?php
+						date_default_timezone_set("Asia/Yekaterinburg");
+						echo date('d-m-Y G:i:s A');
+						?>
+					</div>
 				</div>
 			</div>
-		</div>
 	</div>
 	<footer class="footer">
 		<div class="footer_block_row">
