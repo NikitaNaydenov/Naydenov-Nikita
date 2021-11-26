@@ -35,11 +35,11 @@ body{
 }
 .wrapper{
     width: 100%;
-    display: flex;
     position: relative;
-    flex-direction: column;
     overflow: hidden;
-    background: #e1e1e1;
+    background-repeat: no-repeat;
+	background-size: cover;
+    background-image: url("../img/morning_forest.jpg");
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 
@@ -134,119 +134,12 @@ line-height: 50px;
     }
 }
 
-/*Content________________________________*/
+
 .content{
-    flex: 1 1 auto;
-
-}
-.container{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 5% 0;
-    margin-top: 5%;
     overflow: hidden;
-}
-.container_block{
-    line-height: 40px;
-    height: 100%;
-    background: #292942;
-    justify-content: space-between;
-    display: flex;
-    width: 60%;
-    padding: 0.5%;
-    margin: 0px 10px 0px 0px;
-    border:10px solid #ece89d;
-    color: white;  
-}
-.container_block_column-one{
-    width: 50%;
-    text-align: center;
-    margin: 10px 10px 10px 10px;
-    padding: 5px;
-    border: 10px solid #ece89d;
-    justify-content: space-between;
-    background: #18b5a4;
-}
-.container_block_column-two{
-    width: 50%;
-    text-align: center;
-    margin: 10px 10px 10px 10px;
-    padding: 5px;
-    border:10px solid #ece89d;
-    justify-content: space-between;
-    background: #18b5a4;
-}
-@media screen and (min-width:1025px) and (max-width:1400px){
-    .container_block{
-        font-weight: 700;
-        font-size: 18px;
-    }
-}
-@media screen and  (min-width:770px) and (max-width:1024px){
-    .container_block{
-        font-weight: 700;
-        font-size: 15px;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-    .container_block_column-one{
-        width: 100%;
-    }
-    .container_block_column-two{
-        width: 100%;
-    }
-}
-@media screen and (min-width:375px) and (max-width:769px){
-    .container_block{  
-        font-size: 12px;
-        font-weight: 700;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-    .container_block_column-one{
-        width: 100%;
-    }
-    .container_block_column-two{
-        width: 100%;
-    }
-}
-@media screen and (max-width:374px){
-    .container_block{  
-        font-size: 10px;
-        font-weight: 700;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-    .container_block_column-one{
-        width: 100%;
-    }
-    .container_block_column-two{
-        width: 100%;
-    }
-}
-/* Sidebar-------------------------------- */
-.sidebar{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1%;
-    margin-left: 1%;
-    overflow: hidden;
-    line-height: 70px;
-    height: 100%;
-    width: 30%;
-    position:relative;
-    border-radius: 8px;
-    box-sizing: border-box;
-
-}
-.sidebar_section{
-    width: 30%;
-    border-radius: 8px;
-    box-sizing: border-box;
-    padding-left: 8px;
-    padding-right: 0px
-
+    display: grid;
+    grid-template-rows: auto;
+    min-height: 100vh;
 }
 
 
@@ -366,20 +259,40 @@ line-height: 50px;
     justify-items:center;
     padding: 20px;
 }
+@media screen and (min-width:1025px) and (max-width:1400px){
 
+}
+@media screen and  (min-width:770px) and (max-width:1024px){
+    .grid_block_row{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
+@media screen and (min-width:375px) and (max-width:769px){
+    .grid_block_row{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
+@media screen and (max-width:374px){
+    .grid_block_row{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
 
 /* ПОДВАЛ--------------------- */
 
 .footer{
-    width: 100%;
-    background:#292942;
-    line-height: 30px;
-    color: #ffff;
-    position:relative;
-    align-items: center;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 0;
+	background: #292942;
+	position: relative;
+    margin-top: auto;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+		"Helvetica Neue", sans-serif;
+	color: #fff;
+	left: 0;
+	top: 0;
+	z-index: 50;
 }
 .footer_block_row{
     display: grid;
@@ -388,5 +301,4 @@ line-height: 50px;
     text-align: center;
     justify-items:center;
     padding: 20px;
-    
 }
