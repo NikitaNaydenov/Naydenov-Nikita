@@ -23,7 +23,7 @@
 					<nav class="menu_body">
 						<ul class="menu_list">
 							<li class="menu_item"><a href="../TableMendeleev/index/table_index.html" class="menu_link">Таблица Менделеева</a></li>
-							<li class="menu_item"><a href="../Profile/index/prof_index.html" class="menu_link">Мой профайл</a></li>
+							<li class="menu_item"><a href="../Profile/index/prof_index.php" class="menu_link">Мой профайл</a></li>
 							<li class="menu_item"><a href="../ReplaceBackground/rep_index.php" class="menu_link">Смена фона</a></li>
 							<li class="menu_item"><a href="../ReplaceFile/rep_index.php" class="menu_link">Rep_background</a></li>
 						</ul>
@@ -62,7 +62,7 @@
 		<div class="footer_block_row">
 			<div class="footer_text-main"><a href="../TableMendeleev/index/table_index.html" class="menu_link">Таблица Менделеева</a></li></div>
 			<div class="footer_text"><a href="../html/index.html"class="menu_link">Prod by Naydenov Nikita</a></li></div>
-			<div class="footer_text-main_2"><a href="../Profile/index/prof_index.html" class="menu_link">Мой профайл</a></li></div>
+			<div class="footer_text-main_2"><a href="../Profile/index/prof_index.php" class="menu_link">Мой профайл</a></li></div>
 		</div>
 	</footer>
 </body>

@@ -1,39 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php require_once 'inc/header.php' ?>
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link
-		href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic"
-		rel="stylesheet" />
-	<link rel="stylesheet" href="../css/prof_style.css">
-
-	<title>Задание 15.11.2021</title>
-</head>
-
-<body>
 	<div class="wrapper">
-		<header class="header">
-			<div class="header_container">
-				<div class="header_body">
-					<a href="http://localhost:3000/html/index.html" class="header_logo">
-						My Header
-					</a>
-					<div class="header_main"></div>
-					<nav class="menu_body">
-						<ul class="menu_list">
-							<li class="menu_item"><a href="http://localhost:3000/TableMendeleev/index/table_index.html" class="menu_link">Таблица
-									Менделеева</a></li>
-							<li class="menu_item"><a href="../index/prof_index.html" class="menu_link">Мой профайл</a></li>
-							<li class="menu_item"><a href="http://localhost:3000/ReplaceBackground/rep_index.php" class="menu_link">Смена фона</a></li>
-							<li class="menu_item"><a href="http://localhost:3000/ReplaceFile/rep_index.php" class="menu_link">Rep_background</a></li>
-						</ul>
-					</nav>
-				</div>
-			</div>
-		</header>
+
 		<div class="content">
 			<div class="container">
 				<div class="sidebar">
@@ -77,13 +45,6 @@
 				</div>
 			</div>
 		</div>
-		<footer class="footer">
-			<div class="footer_block_row">
-				<div class="footer_text-main"><a href="../TableMendeleev/index/table_index.html" class="menu_link">Таблица Менделеева</a></li></div>
-				<div class="footer_text"><a href="../html/index.html"class="menu_link">Prod by Naydenov Nikita</a></li></div>
-				<div class="footer_text-main_2"><a href="../Profile/index/prof_index.html" class="menu_link">Мой профайл</a></li></div>
-			</div>
-		</footer>
-</body>
+	</div>
+<?php require_once 'inc/footer.php'?>
 
-</html>
