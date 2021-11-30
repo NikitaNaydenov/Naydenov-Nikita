@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,32 +6,18 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link
-		href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic"
-		rel="stylesheet" />
-	<link rel="stylesheet" href="../css/table_style.css">
-	<title>Таблица Менделеева</title>
+			href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic"
+			rel="stylesheet" />
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/table_style.css">
+
+
+	<title>Задание 15.11.2021</title>
 </head>
 
+<?php require_once 'inc/header.php' ?>
 <body>
 	<div class="wrapper">
-		<header class="header">
-			<div class="header_container">
-				<div class="header_body">
-					<a href="http://localhost:3000/html/index.html" class="header_logo">
-						My Header
-					</a>
-					<div class="header_main"></div>
-					<nav class="menu_body">
-						<ul class="menu_list">
-							<li class="menu_item"><a href="../index/table_index.html" class="menu_link">Таблица Менделеева</a></li>
-							<li class="menu_item"><a href="http://localhost:3000/Profile/index/prof_index.html" class="menu_link">Мой профайл</a></li>
-							<li class="menu_item"><a href="http://localhost:3000/ReplaceBackground/rep_index.php" class="menu_link">Смена фона</a></li>
-							<li class="menu_item"><a href="http://localhost:3000/ReplaceFile/rep_index.php" class="menu_link">Rep_background</a></li>
-						</ul>
-					</nav>
-				</div>
-			</div>
-		</header>
 		<!--		<caption align="top">Таблица Менделеева</caption>-->
 		<div class="wrapper_container">
 			<table style="border: 1px solid black">
@@ -297,10 +283,10 @@
 			</table>
 		</div>
 
-
+		</div>
 	</div>
 
-
 </body>
-
+<?php require_once 'inc/footer.php' ?>
 </html>
+
