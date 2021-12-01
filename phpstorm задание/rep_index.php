@@ -25,7 +25,7 @@
 							<li class="menu_item"><a href="table_index.php" class="menu_link">Таблица Менделеева</a></li>
 							<li class="menu_item"><a href="prof_index.php" class="menu_link">Мой профайл</a></li>
 							<li class="menu_item"><a href="rep_index.php" class="menu_link">Смена фона</a></li>
-							<li class="menu_item"><a href="../ReplaceFile/rep_index.php" class="menu_link">Rep_background</a></li>
+							
 						</ul>
 					</nav>
 				</div>
