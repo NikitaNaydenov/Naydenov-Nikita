@@ -22,9 +22,9 @@
 
 			<div class="container">
 				<div class="sidebar">
-					<div class="sidebar_section">
-						<div class="sidebar_item"><img src="img/pict.jpg" alt="Подпись к картинке"></div>
-					</div>
+						<!-- <div class="sidebar_item"><img src="img/pict.jpg" alt="Подпись к картинке"></div> -->
+						<div class="sidebar_second"></div>
+						<div class = "sidebar_third"></div>
 				</div>
 				<div class="container_block">
 					<div class="container_block_column-one">
@@ -43,7 +43,15 @@ $arr = explode("/ " ,$str);
 echo '<span style="color: #f1f165">' . $arr[0] . '</span>' . ' ';
 echo $arr[1];
 $arr11 = explode(" " ,$str);
+// Подсчет гласных__________________________
+$patt = '~(?<vowels>[аеёиоуыэюяaeiouy])~iu';
+preg_match_all($patt, $str , $a);
+
+$vowels = count(array_filter($a['vowels']));
+
+echo ' '. 'Гласных букв: '. $vowels .'<br />';
 ?>
+
 
 						</div>
 					</div>
@@ -57,18 +65,29 @@ $arr11 = explode(" " ,$str);
 на лекции не было скучно, не смотря на 3+ часа. Минусов на данном этапе нет, только положительные эмоции. 
 Уроки проходят очень увлекательно! 
 Очень надеюсь что и дальше все пройдет на такой же хорошей ноте. Так держать - школа Факт!';
-							$arr2 = explode(" " ,$str2);
-							for ($N = 0; $N < 200; $N++) {
-							if ($N%  2 == 0) {
-							echo '<span style="color: #f1f165">' . $arr2[$N] . '</span>' . ' ';
-							}
-							else
-							echo $arr2[$N]  . ' ';
-							}
-							?>
-							<div align="center"><?$arr4 = array_merge($arr11, $arr2);
-                echo 'Количество слов на странице:' . ' '. count($arr4);
-			?></div>
+$arr2 = explode(" " ,$str2);
+for ($N = 0; $N < 200; $N++) {
+if ($N%  2 == 0) {
+echo '<span style="color: #f1f165">' . $arr2[$N] . '</span>' . ' ';
+}
+else
+echo $arr2[$N]  . ' ';
+}
+?>
+<div align="center"><?$arr4 = array_merge($arr11, $arr2);
+echo 'Количество слов на странице:' . ' '. count($arr4);
+
+$patt = '~(?<vowels>[аеёиоуыэюяaeiouy])~iu';
+preg_match_all($patt, $str2 , $a);
+
+$vowels = count(array_filter($a['vowels']));
+
+echo ' '. 'Гласных букв: '. $vowels .'<br />';
+
+?>
+
+				</div>
+
 
 						</div>
 					</div>

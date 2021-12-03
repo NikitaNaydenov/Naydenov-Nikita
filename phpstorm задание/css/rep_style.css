@@ -164,7 +164,47 @@ body {
 	align-items: center;
 	height: 100%;
 }
+.block_button{
+	display: flex;
+	left:50%;
+	width: 100%;
+	justify-content: space-around;
+	margin: 0px 0px 10px 0px;
+	padding: 2%;
+}
+.button_morning{
+border: 3px solid #aaa;
+font-size: 30px;
+color:#000;
+width: 250px;
+height: 60px;
+display: block;
+text-align: center;
+line-height: 60px;
 
+}
+.button_evening{
+	border: 3px solid #aaa;
+	font-size: 30px;
+	color:#000;
+	width: 250px;
+	height: 60px;
+	display: block;
+	text-align: center;
+	line-height: 60px;
+	
+}
+.button_night{
+	border: 3px solid #aaa;
+	font-size: 30px;
+	color:#000;
+	width: 250px;
+	height: 60px;
+	display: block;
+	text-align: center;
+	line-height: 60px;
+	
+}
 /* ПОДВАЛ--------------------- */
 
 .footer{

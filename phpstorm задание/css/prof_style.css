@@ -230,25 +230,39 @@ body {
 /* Sidebar-------------------------------- */
 .sidebar {
 	display: flex;
-	justify-content: space-between;
-	margin-bottom: 1%;
-	margin-left: 1%;
-	overflow: hidden;
-	line-height: 70px;
-	height: 100%;
 	width: 30%;
-	position: relative;
-	border-radius: 8px;
-	box-sizing: border-box;
-}
-.sidebar_section {
-	width: 30%;
-	border-radius: 8px;
-	box-sizing: border-box;
-	padding-left: 8px;
-	padding-right: 0px;
+	flex-direction: column;
+	background-color: #292942;
+	padding: 1%;
+	margin: 10px 10px 10px 10px;
+	line-height: 30px;
+	max-height: 15% !important;
 }
 
+.sidebar_second{
+	line-height: 10px;
+	height: 10%;
+	background: #18b5a4;
+	justify-content: space-between;
+	display: flex;
+	width: 100%;
+	padding: 0.2%;
+	margin: 0px 10px 0px 0px;
+	border:10px solid #ece89d;
+	color: white; 
+}
+.sidebar_third{
+	line-height: 20px;
+	height: 10%;
+	background: #18b5a4;
+	justify-content: space-between;
+	display: flex;
+	width: 100%;
+	padding: 0.2%;
+	margin: 10px 10px 0px 0px;
+	border:10px solid #ece89d;
+	color: white; 
+}
 
 
 /* ПОДВАЛ--------------------- */

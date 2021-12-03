@@ -44,10 +44,8 @@
 
 						} 	elseif ($hour ==22 || $hour >=1 && $hour<=6) {
 							echo '<img src="img/night_forest.jpg">';
-						}
-					
+						}	
 					?>
-
 				<div class="content_container">
 					<div class="content_block">
 						<?php
@@ -55,8 +53,18 @@
 						echo date('d-m-Y G:i:s A');
 						?>
 					</div>
+						<form action="rep_index.php" method="post">
+							<div class="block-button">
+								<div class="button_morning">Утренняя тема</div>
+								<div class="button_evening">Вечерняя тема</div>
+								<div class="button_night">Ночная тема</div>
+							</div>
+						</form>	
+					
 				</div>
+					
 			</div>
+		
 	</div>
 	<footer class="footer">
 		<div class="footer_block_row">
