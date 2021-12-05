@@ -25,6 +25,8 @@ echo $x . '<br>';
 }
 echo "Вы достигли предела" . '<br>';
 }
+echo '<br>';
+
 f3(10);
 echo '<br>';
 function f4($n){
@@ -35,11 +37,15 @@ $arr[] = mt_rand(0,100);
    return $arr;
 }
 print_r(f4(10));
+echo '<br>';
+
 function f5($arr){
    return array_sum($arr)/count($arr);
 }
 $arr1= [10,20,30,40];
 echo '<br>' . f5($arr1) . '<br>';
+echo '<br>';
+
 function f6($str){
    $arr = explode(' ', $str);
       return count($arr);

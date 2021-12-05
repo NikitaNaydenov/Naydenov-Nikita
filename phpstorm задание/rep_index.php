@@ -17,8 +17,7 @@
 			<div class="content">
 					<?php
 						date_default_timezone_set("Asia/Yekaterinburg");
-						$hour = (int)date("G");
-
+						function times($hour){
 						if ($hour >=7  && $hour <=16) { 
 							echo '<img src="img/morning_forest.jpg">';
 
@@ -27,7 +26,10 @@
 
 						} 	elseif ($hour ==22 || $hour >=1 && $hour<=6) {
 							echo '<img src="img/night_forest.jpg">';
-						}	
+						}
+						return $hour;
+                        }
+                    $hour = (int)date("G");
 					?>
 				<div class="content_container">
 					<div class="content_block">

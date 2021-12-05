@@ -14,7 +14,9 @@
 
 	<title>Задание 15.11.2021</title>
 </head>
-<?php require_once 'inc/header.php' ?>
+<?php require_once 'inc/header.php'; ?>
+<? require_once 'inc/functions.php' ?>
+
 <body>
 	<div class="wrapper">
 
@@ -42,14 +44,6 @@
 $arr = explode("/ " ,$str);
 echo '<span style="color: #f1f165">' . $arr[0] . '</span>' . ' ';
 echo $arr[1];
-$arr11 = explode(" " ,$str);
-// Подсчет гласных__________________________
-$patt = '~(?<vowels>[аеёиоуыэюяaeiouy])~iu';
-preg_match_all($patt, $str , $a);
-
-$vowels = count(array_filter($a['vowels']));
-
-echo ' '. 'Гласных букв: '. $vowels .'<br />';
 ?>
 
 
@@ -65,28 +59,36 @@ echo ' '. 'Гласных букв: '. $vowels .'<br />';
 на лекции не было скучно, не смотря на 3+ часа. Минусов на данном этапе нет, только положительные эмоции. 
 Уроки проходят очень увлекательно! 
 Очень надеюсь что и дальше все пройдет на такой же хорошей ноте. Так держать - школа Факт!';
-$arr2 = explode(" " ,$str2);
+//$arr2 = explode(" " ,$str2);
 for ($N = 0; $N < 200; $N++) {
 if ($N%  2 == 0) {
-echo '<span style="color: #f1f165">' . $arr2[$N] . '</span>' . ' ';
+echo '<span style="color: #f1f165">' . str_in_arr($str2)[$N] . '</span>' . ' ';
 }
 else
-echo $arr2[$N]  . ' ';
+echo str_in_arr($str2)[$N]  . ' ';
 }
-?>
-<div align="center"><?$arr4 = array_merge($arr11, $arr2);
-echo 'Количество слов на странице:' . ' '. count($arr4);
-
-$patt = '~(?<vowels>[аеёиоуыэюяaeiouy])~iu';
-preg_match_all($patt, $str2 , $a);
-
-$vowels = count(array_filter($a['vowels']));
-
-echo ' '. 'Гласных букв: '. $vowels .'<br />';
 
 ?>
 
-				</div>
+
+<div align="center">
+<?$arr3 = array_merge(str_in_arr($str),str_in_arr($str2));
+$str3 = implode(' ', $arr3);
+echo 'Общеее количество слов на странице:' . ' '. count($arr3) .  '<br>';
+
+
+echo 'Количество гласных букв: '. vowels($str3) .'<br>';
+
+?>
+    <?
+    $today = time();
+    $bday = strtotime("1995-08-18");
+    ?>
+    <?
+    echo 'Дата рождения: 18.08.1995 ' . 'Текущая дата: ' . date('d.m.Y') . '<br>' ;
+    echo 'Количество дней: ' . floor(days($today,$bday) / (60 * 60 * 24));
+    ?>
+</div>
 
 
 						</div>
