@@ -29,7 +29,7 @@
 						}
 						return $hour;
                         }
-                    $hour = (int)date("G");
+                  $hour = (int)date("G");
 					?>
 				<div class="content_container">
 					<div class="content_block">
