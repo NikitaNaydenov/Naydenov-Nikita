@@ -17,13 +17,19 @@
 			<div class="content">
 				<div class="content_container">
 					<form action="" method="">
+						<label>ФИО</label>
+						<input type="text" placeholder="Введите свое полное имя">
 						<label>Логин</label>
 						<input type="text" placeholder="Введите свой логин">
+						<label>Почта</label>
+						<input type="email" placeholder="Введите адрес своей почты">
 						<label>Пароль</label>
-						<input type="password" placeholder="Введите свой пароль">
+						<input type="password" placeholder="Введите пароль">
+						<label>Подтверждение пароля</label>
+						<input type="password" placeholder="Подтвердите пароль">
 						<button>Войти</button>
 						<p>
-							У вас нет аккаунта? - <a href = "../phpstorm задание/register.php">зарегистрируйтесь</a>
+							У вас нет аккаунта? - <a href = "#">зарегистрируйтесь</a>
 						</p>	
 					</form>					
 				</div>				
