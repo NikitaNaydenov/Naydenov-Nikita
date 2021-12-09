@@ -14,28 +14,42 @@
 </head>
 <?php require_once 'inc/header.php' ?>
 <body>
-			<div class="content">
-				<div class="content_container">
-					<form action="" method="">
-						<label>ФИО</label>
-						<input type="text" placeholder="Введите свое полное имя">
+		<div class="content">
+			<div class="content_container">
+				<form method="post">
+					<p>РЕГИСТРАЦИЯ</p>
 						<label>Логин</label>
-						<input type="text" placeholder="Введите свой логин">
-						<label>Почта</label>
-						<input type="email" placeholder="Введите адрес своей почты">
+						<input type="text" name="name" placeholder="Введите свое полное имя">
 						<label>Пароль</label>
-						<input type="password" placeholder="Введите пароль">
-						<label>Подтверждение пароля</label>
-						<input type="password" placeholder="Подтвердите пароль">
-						<button>Войти</button>
-						<p>
-							У вас нет аккаунта? - <a href = "#">зарегистрируйтесь</a>
-						</p>	
-					</form>					
-				</div>				
-			</div>
-		
-	</div>
+						<input type="password" name="pass" placeholder="Введите пароль">
+						<input type="submit" value="Зарегистрироваться" class="submit">
+						<?php
+						$_POST['name'] = trim($_POST['name']);
+						$_POST['pass'] = trim($_POST['pass']);
+						if(empty($_POST['name'])) exit();
+						if(empty($_POST['name'])) exit('<p>Поле "Логин" не заполнено<p>');
+						if(empty($_POST['pass'])) exit('<p>Поле "Пароль" не заполнено<p>');
+						$filename = "users.txt";
+						$arr = file($filename);
+						foreach($arr as $line)
+						{
+							$data = explode("--",$line);
+							$temp[] = $data[0];
+						}
+						if(in_array($_POST['name'], $temp))
+						{
+							exit("<p>Пользователь с таким именем уже зарегистрирован<p>");
+						}
+						$fd = fopen($filename, "a");
+						if(!$fd) exit("Ошибка при открытии файла данных");
+						$str = $_POST['name']."--".
+							md5($_POST['pass'])."--"."\r\n";
+						fwrite($fd,$str);
+						fclose($fd);
+               ?>	
+				</form>					
+			</div>				
+		</div>
 </body>
 <?php require_once 'inc/footer.php' ?>
 </html>

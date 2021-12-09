@@ -172,10 +172,10 @@ input {
 	border-bottom: 2px;
 	outline: none;
 }
-button {
+.submit {
 	margin: 12px auto 12px auto;
 	padding: 5px;
-	width: 30%;
+	width: 50%;
 	background: #5e5373;
 	font-size: 15px;
 	font-weight: bold;
