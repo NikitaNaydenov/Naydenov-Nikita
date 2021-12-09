@@ -80,10 +80,10 @@ if (isset($_POST['bitrix'])) {
 						<form action="authorization.php" method="post">
 							<p>
 								<button type="submit" value="FACT" name="fact" class="custom_button">
-									<img src="img/icon_me.png" style="border-radius: 0px">
+									<img src="img/logo_fact.png" style="border-radius: 0px">
 								</button>
 								<button type="submit" value="BITRIX" name="bitrix" class="custom_button">
-									<img src="img/icon_me.png" style="border-radius: 0px">
+									<img src="img/logo_bitrix.png" style="border-radius: 0px">
 								</button>
 							</p>
 						</form>

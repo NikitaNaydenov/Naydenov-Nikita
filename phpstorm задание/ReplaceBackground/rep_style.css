@@ -30,6 +30,7 @@ html,
 body {
 	height: 100%;
 	line-height: 1;
+	font-size: 16px;
 	color: black;
 }
 .wrapper {
@@ -82,21 +83,21 @@ body {
 	color: #fff;
 	padding: 20px;
 }
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1025px) and (max-width: 1400px) {
 	.menu_link {
-		font-size: 10px;
+		font-size: 25px;
 		font-weight: 700;
 	}
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 770px) and (max-width: 1024px) {
 	.menu_link {
-		font-size: 12px;
+		font-size: 18px;
 		font-weight: 700;
 	}
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 375px) and (max-width: 769px) {
 	.menu_link {
-		font-size: 15px;
+		font-size: 14px;
 		font-weight: 700;
 	}
 }
@@ -140,13 +141,12 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	z-index: 0;
-	overflow: hidden;
 }
 .content_container {
 	width: 100%;
+	position: absolute !important;
 	background: #fff;
 	margin-top: 30%;
-	margin-bottom: 30%;
 	align-items: center;
 	justify-content: center;
 	z-index: 50;
@@ -163,149 +163,24 @@ body {
 	align-items: center;
 	height: 100%;
 }
-.block_button{
-	display: flex;
-	left:50%;
-	width: 100%;
-	justify-content: space-around;
-	flex-wrap: wrap;
-	margin: 0px 0px 10px 0px;
-	padding: 2%;
-	
-}
-.button_morning{
-border: 3px solid #aaa;
-font-size: 30px;
-color:#000;
-width: 250px;
-height: 60px;
-display: block;
-text-align: center;
-line-height: 60px;
-position: relative;
-transition: .5s;
-overflow: hidden;
-}
-.button_morning::before,
-.button_morning::after{
-	position: absolute;
-	content: '';
-	display: block;
-	width: 100%;
-	height: 100%;
-	background:goldenrod ;
-	left: -100%;
-	opacity: 1.9;
-	transition: .3s;
-	z-index: -1;
-}
-.button_morning::after{
-	opacity: 1;
-	transition-delay: .1s;
-}
-.button_morning:hover{
-	color: #fff;
-}
-.button_morning:hover::before,
-.button_morning:hover::after{
-	left:0;
-}
-.button_evening{
-	border: 3px solid #aaa;
-	font-size: 30px;
-	color:#000;
-	width: 250px;
-	height: 60px;
-	display: block;
-	text-align: center;
-	line-height: 60px;
-	position: relative;
-	transition: .5s;
-	overflow: hidden;
-	
-}
-.button_evening::before,
-.button_evening::after{
-	position: absolute;
-	content: '';
-	display: block;
-	width: 100%;
-	height: 100%;
-	background: #218294;
-	left: -100%;
-	opacity: 0.9;
-	transition: .3s;
-	z-index: -1;
-}
-.button_evening::after{
-	opacity: 1;
-	transition-delay: .1s;
-}
-.button_evening:hover{
-	color: #fff;
-}
-.button_evening:hover::before,
-.button_evening:hover::after{
-	left:0;
-}
-.button_night{
-	border: 3px solid #aaa;
-	font-size: 30px;
-	color:#000;
-	width: 250px;
-	height: 60px;
-	display: block;
-	text-align: center;
-	line-height: 60px;
-	position: relative;
-	transition: .5s;
-	overflow: hidden;
-	
-}
-.button_night::before,
-.button_night::after{
-	position: absolute;
-	content: '';
-	display: block;
-	width: 100%;
-	height: 100%;
-	background: #5e5373;
-	left: -100%;
-	opacity: 0.9;
-	transition: .3s;
-	z-index: -1;
-}
-.button_night::after{
-	opacity: 1;
-	transition-delay: .1s;
-}
-.button_night:hover{
-	color: #fff;
-}
-.button_night:hover::before,
-.button_night:hover::after{
-	left:0;
-}
 
 /* ПОДВАЛ--------------------- */
 
-.footer{
+.footer {
 	background: #292942;
 	position: relative;
-   overflow: hidden;
-   margin-top: auto;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
 		"Helvetica Neue", sans-serif;
 	color: #fff;
 	left: 0;
+	top: 0;
 	z-index: 50;
 }
-.footer_block_row{
-	width: 100%;
-   display: grid;
-   grid-template-columns: repeat(1, 1fr 1fr 1fr);
-   column-gap: normal;
-   text-align: center;
-   justify-items:center;
-   padding: 20px;
+.footer_block_row {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr 1fr 1fr);
+	column-gap: normal;
+	text-align: center;
+	justify-items: center;
+	padding: 20px;
 }

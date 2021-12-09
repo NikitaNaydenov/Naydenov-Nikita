@@ -14,23 +14,23 @@
 </head>
 <?php require_once 'inc/header.php' ?>
 <body>
-			<div class="content">
-					<?php
-						date_default_timezone_set("Asia/Yekaterinburg");
-						function times($hour){
-						if ($hour >=7  && $hour <=16) { 
-							echo '<img src="img/morning_forest.jpg">';
+	<div class="content">
+		<?php
+		date_default_timezone_set("Asia/Yekaterinburg");
+		function times($hour){
+			if ($hour >=7  && $hour <=16) {
+					echo '<img src="img/morning_forest.jpg">';
 
-						} 	elseif ($hour >=17  && $hour <=21) {
-							echo '<img src="img/evening_forest.jpg">';
+				} 	elseif ($hour >=17  && $hour <=21) {
+					echo '<img src="img/evening_forest.jpg">';
 
-						} 	elseif ($hour ==22 || $hour >=1 && $hour<=6) {
-							echo '<img src="img/night_forest.jpg">';
-						}
-						return $hour;
-                        }
-                  $hour = (int)date("G");
-					?>
+				} 	elseif ($hour ==22 || $hour >=1 && $hour<=6) {
+					echo '<img src="img/night_forest.jpg">';
+				}
+			return $hour;
+				}
+					$hour = (int)date("G");
+		?>
 				<div class="content_container">
 					<div class="content_block">
 						<?php
