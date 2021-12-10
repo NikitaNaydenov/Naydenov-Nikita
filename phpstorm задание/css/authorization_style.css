@@ -167,6 +167,9 @@ form{
 }
 input {
 	margin: 0px 0px 15px 0px;
+	background: #5e5373;
+	color: #fff;
+	font-weight: 800;
 	padding: 10px;
 	border: unset;
 	border-bottom: 2px;

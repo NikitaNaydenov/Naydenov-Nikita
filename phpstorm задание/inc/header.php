@@ -1,24 +1,20 @@
 
-
-
-    <header class="header">
-        <div class="header_container">
-            <div class="header_body">
-                <a href="index.php" class="header_logo">
-                    My Header
-                </a>
-                <div class="header_main"></div>
-                <nav class="menu_body">
-                    <ul class="menu_list">
-                        <li class="menu_item"><a href="table_index.php" class="menu_link">Таблица
-                                Менделеева</a></li>
-                        <li class="menu_item"><a href="prof_index.php" class="menu_link">Мой профайл</a></li>
-                        <li class="menu_item"><a href="rep_index.php" class="menu_link">Смена фона</a></li>
-                        <li class="menu_item"><a href="29_11_21.php" class="menu_link">Задание с 29 ноября</a></li>
-                        <li class="menu_item"><a href="authorization.php" class="menu_link">Авторизация</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
+<header class="header">
+    <div class="menu_list_left">
+        <ul class="menu">
+            <li><a href="table_index.php">Таблица Менделеева</a></li>
+            <li><a href="rep_index.php">Смена фона</a></li>
+            <li><a href="29_11_21.php">Задание с 29 ноября</a></li>
+        </ul>
+    </div>
+    <div class="menu_list_center">
+            <a href="index.php" class="logo">My Header</a>
+    </div>
+    <div class="menu_list_right">
+        <ul class="menu">
+            <li><a href="prof_index.php">Мой профайл</a></li>
+            <li><a href="authorization.php">Авторизация</a></li>
+        </ul>
+    </div> 
+</header>
 
