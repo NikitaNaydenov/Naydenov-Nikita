@@ -1,3 +1,8 @@
+//Логин от БД: Nick Пароль: 1245
+
+<?php
+session_start();
+?>
 <?
 if (isset($_POST['fact'])) {
    $value = 'Недавно Вы были на сайте FACT';
@@ -36,7 +41,7 @@ if (isset($_POST['bitrix'])) {
 					if(empty($_POST))
 					{
 						?>
-						<form	form action="" method="post">
+						<form	form action="Registration/signin.php" method="post">
 							<label>Логин</label>
 							<input type="text" name="name" placeholder="Введите свой логин">
 							<label>Пароль</label>
@@ -44,7 +49,13 @@ if (isset($_POST['bitrix'])) {
 							<input type="submit" value="Войти"  class="submit">
 							<p>
 								У вас нет аккаунта? - <a href = "/register.php">зарегистрируйтесь</a>
-							</p>	
+							</p>
+							<p class="massage">
+								<? if ($_SESSION['message']) {
+									echo '<p class="message"> ' . $_SESSION['message'] . '</p>';
+								}
+								unset($_SESSION['message']);
+								?>
 						</form>		
 						<?php
 					}

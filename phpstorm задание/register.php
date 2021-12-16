@@ -16,10 +16,10 @@
 <body>
 		<div class="content">
 			<div class="content_container">
-				<form method="post">
+				<form action="Registration/signup.php" method="post">
 					<p>РЕГИСТРАЦИЯ</p>
 						<label>Логин</label>
-						<input type="text" name="name" placeholder="Введите свое полное имя">
+						<input type="text" name="name" placeholder="Введите свой логин">
 						<label>Пароль</label>
 						<input type="password" name="pass" placeholder="Введите пароль">
 						<input type="submit" value="Зарегистрироваться" class="submit">
